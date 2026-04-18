@@ -111,7 +111,7 @@ public class Task5{
                 //code to start game 7
                 break;
             case 8:
-                //code to start game 8
+                SB_SearchForLight.SearchForLight();
                 break;
             case 9:
                 //code to start game 9
