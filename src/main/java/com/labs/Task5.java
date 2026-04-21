@@ -1,6 +1,7 @@
 package src.main.java.com.labs;
 
 import com.labs.Laur.SpyBot;
+import src.main.java.com.labs.Daniel.GameController;
 
 import java.io.IOException;
 
@@ -87,10 +88,11 @@ public class Task5{
         return true;
     }
 
-    public static void startGame(){
+    public static void startGame() throws InterruptedException {
         switch(choice){
             case 1:
-                //code to start game 1
+                GameController gameController = new GameController();
+                gameController.startGame();
                 break;
             case 2:
                 //code to start game 2
