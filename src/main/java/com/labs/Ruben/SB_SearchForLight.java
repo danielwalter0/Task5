@@ -1,3 +1,5 @@
+package com.labs.Ruben;
+
 import swiftbot.*;
 import java.util.ArrayList;
 import java.util.Random;
