@@ -1,11 +1,12 @@
-package com.labs;
+package src.main.java.com.labs;
 
 import com.labs.Lawrence.TrafficLights;
 import com.labs.Laur.SpyBot;
 import com.labs.Ferdous.Assignment3;
 import com.labs.Hosna.NoughtsAndCrosses;
-import src.main.java.com.labs.Daniel.GameController;
+import com.labs.Daniel.GameController;
 import com.labs.Ruben.SB_SearchForLight;
+import com.labs.Ainesh.SnakesAndLadders;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -98,7 +99,7 @@ public class Task5{
                 //code to start game 2
                 break;
             case 3:
-                //code to start game 3
+                SnakesAndLadders.main(args);
                 break;
             case 4:
                 TrafficLights.main(args);
@@ -109,7 +110,7 @@ public class Task5{
             case 6:
                 System.out.println("Starting Draw Shape (Task 6)...");
                 try {
-                    Assignment3.main(new String[]{});
+                    Assignment3.main(args);
                 } catch (Exception e) {
                     System.out.println("Error running Task 6: " + e.getMessage());
                 }
