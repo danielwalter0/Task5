@@ -1,31 +1,33 @@
-package src.main.java.com.labs;
+package com.labs;
 
+import com.labs.Lawrence.TrafficLights;
 import com.labs.Laur.SpyBot;
-import src.main.java.com.labs.Ainesh.SnakesAndLadders;
-import src.main.java.com.labs.Daniel.GameController;
+import com.labs.Ferdous.Assignment3;
+import com.labs.Hosna.NoughtsAndCrosses;
+import com.labs.Daniel.GameController;
+import com.labs.Ruben.SB_SearchForLight;
+import com.labs.Ainesh.SnakesAndLadders;
 
 import java.io.IOException;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task5{
-    public static void main(String[] args) throws InterruptedException, IOException {
+    public static void main(String[] args) throws InterruptedException, IOException
+    {
         printWelcomeMessage();
         printChooseMessage();
         printSelectMenu();
         while(!validate());
         startGame(args);
-
         sc.close();
     }
     static Scanner sc = new Scanner(System.in);
     static int choice;
 
     public static void printWelcomeMessage() {
-        String violet = "\u001B[35m";  // ANSI purple (violet)
+        String violet = "\u001B[35m";
         String reset = "\u001B[0m";
-
         System.out.println(violet +
                 " _       __________    __________  __  _________\n" +
                 "| |     / / ____/ /   / ____/ __ \\/  |/  / ____/\n" +
@@ -37,10 +39,10 @@ public class Task5{
         //used https://patorjk.com/software/taag
         //Slant font
     }
-    public static void printChooseMessage() {
-        String cyan = "\u001B[36m";  // bright cyan
-        String reset = "\u001B[0m";
 
+    public static void printChooseMessage() {
+        String cyan = "\u001B[36m";
+        String reset = "\u001B[0m";
         System.out.println(cyan +
                 "   ________                             __  __                                        \n" +
                 "  / ____/ /_  ____  ____  ________     / /_/ /_  ___     ____ _____ _____ ___  ___  _ \n" +
@@ -52,9 +54,8 @@ public class Task5{
     }
 
     public static void printSelectMenu() {
-        String yellow = "\u001B[33m"; // yellow
+        String yellow = "\u001B[33m";
         String reset = "\u001B[0m";
-
         System.out.println(yellow +
                 "=========================================\n" +
                 "               GAME MENU                 \n" +
@@ -74,6 +75,7 @@ public class Task5{
                 "=========================================\n"
                 + reset);
     }
+
     public static boolean validate(){
         try{
             choice = sc.nextInt();
@@ -89,7 +91,8 @@ public class Task5{
         return true;
     }
 
-    public static void startGame(String[] args) throws InterruptedException, IOException {
+    public static void startGame(String[] args) throws InterruptedException, IOException
+    {
         switch(choice){
             case 1:
                 GameController gameController = new GameController();
@@ -102,19 +105,24 @@ public class Task5{
                 SnakesAndLadders.main(args);
                 break;
             case 4:
-                //code to start game 4
+                TrafficLights.main(args);
                 break;
             case 5:
-                //code to start game 5
+                SpyBot.main(args);
                 break;
             case 6:
-                //code to start game 6
+                System.out.println("Starting Draw Shape (Task 6)...");
+                try {
+                    Assignment3.main(args);
+                } catch (Exception e) {
+                    System.out.println("Error running Task 6: " + e.getMessage());
+                }
                 break;
             case 7:
-                //code to start game 7
+                NoughtsAndCrosses.main(args);
                 break;
             case 8:
-                //code to start game 8
+                SB_SearchForLight.SearchForLight();
                 break;
             case 9:
                 //code to start game 9

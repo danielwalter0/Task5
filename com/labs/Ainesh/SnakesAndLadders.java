@@ -1,4 +1,4 @@
-package src.main.java.com.labs.Ainesh;
+package com.labs.Ainesh;
 
 import java.io.FileWriter;
 import java.io.IOException;
