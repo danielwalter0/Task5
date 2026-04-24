@@ -1,4 +1,4 @@
-package src.main.java.com.labs.Daniel;
+package com.labs.Daniel;
 
 import java.util.Arrays;
 import java.util.Collections;

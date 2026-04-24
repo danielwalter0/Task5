@@ -1,4 +1,4 @@
-package src.main.java.com.labs;
+package com.labs;
 
 import com.labs.Lawrence.TrafficLights;
 import com.labs.Laur.SpyBot;
@@ -35,6 +35,9 @@ public class Task5{
                 "| |/ |/ / /___/ /___/ /___/ /_/ / /  / / /___   \n" +
                 "|__/|__/_____/_____/\\____/\\____/_/  /_/_____/   \n" +
                 reset);
+
+        //used https://patorjk.com/software/taag
+        //Slant font
     }
 
     public static void printChooseMessage() {
@@ -127,6 +130,11 @@ public class Task5{
             case 10:
                 //code to start game 10
                 break;
+
         }
     }
 }
+
+
+
+
