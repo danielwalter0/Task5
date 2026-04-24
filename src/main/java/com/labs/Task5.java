@@ -1,6 +1,7 @@
 package src.main.java.com.labs;
 
 import com.labs.Laur.SpyBot;
+import src.main.java.com.labs.Ainesh.SnakesAndLadders;
 import src.main.java.com.labs.Daniel.GameController;
 
 import java.io.IOException;
@@ -9,12 +10,12 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task5{
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, IOException {
         printWelcomeMessage();
         printChooseMessage();
         printSelectMenu();
         while(!validate());
-        startGame();
+        startGame(args);
 
         sc.close();
     }
@@ -88,7 +89,7 @@ public class Task5{
         return true;
     }
 
-    public static void startGame() throws InterruptedException {
+    public static void startGame(String[] args) throws InterruptedException, IOException {
         switch(choice){
             case 1:
                 GameController gameController = new GameController();
@@ -98,7 +99,7 @@ public class Task5{
                 //code to start game 2
                 break;
             case 3:
-                //code to start game 3
+                SnakesAndLadders.main(args);
                 break;
             case 4:
                 //code to start game 4
