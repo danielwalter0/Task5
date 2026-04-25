@@ -1,4 +1,4 @@
-package src.main.java.com.labs.Daniel;
+package com.labs.Daniel;
 
 //enum is a data type where the values it can take are specified beforehand,
 //like so, the colour can only be the specified 6 colours

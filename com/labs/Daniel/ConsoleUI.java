@@ -1,4 +1,4 @@
-package src.main.java.com.labs.Daniel;
+package com.labs.Daniel;
 
 //A separate class to handle all console print statements e.g. win/lose screen, error message
 // and making them coloured

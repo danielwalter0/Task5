@@ -1,4 +1,4 @@
-package src.main.java.com.labs.Daniel;
+package com.labs.Daniel;
 
 import java.io.BufferedWriter;
 import java.io.File;
