@@ -6,7 +6,8 @@ import com.labs.Ferdous.Assignment3;
 import com.labs.Hosna.NoughtsAndCrosses;
 import com.labs.Daniel.GameController;
 import com.labs.Ruben.SB_SearchForLight;
-import com.labs.Ainesh.SnakesAndLadders;
+import com.labs.Ainesh.SnakesAndLadders; 
+import com.labs.Miye.SwiftBotDance;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -125,7 +126,7 @@ public class Task5{
                 SB_SearchForLight.SearchForLight();
                 break;
             case 9:
-                //code to start game 9
+                SwiftBotDance.main(args);
                 break;
             case 10:
                 //code to start game 10
