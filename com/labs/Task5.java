@@ -126,7 +126,7 @@ public class Task5{
                 SB_SearchForLight.SearchForLight();
                 break;
             case 9:
-                //code to start game 9
+                 SwiftBotDancecomp.main(args);
                 break;
             case 10:
                 //code to start game 10
