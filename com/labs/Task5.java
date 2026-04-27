@@ -1,5 +1,6 @@
 package com.labs;
 
+import com.labs.Janika.ZigzagTask;
 import com.labs.Lawrence.TrafficLights;
 import com.labs.Laur.SpyBot;
 import com.labs.Ferdous.Assignment3;
@@ -100,7 +101,7 @@ public class Task5{
                 gameController.startGame();
                 break;
             case 2:
-                //code to start game 2
+                ZigzagTask.main(args);
                 break;
             case 3:
                 SnakesAndLadders.main(args);
