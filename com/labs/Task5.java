@@ -70,7 +70,7 @@ public class Task5{
                 "  7) Noughts and Crosses\n" +
                 "  8) Search for Light\n" +
                 "  9) Dance\n" +
-                " 10) Detect Object\n" +
+                
                 "-----------------------------------------\n" +
                 " Enter the game number (1-10): \n" +
                 "=========================================\n"
@@ -128,9 +128,7 @@ public class Task5{
             case 9:
                 SwiftBotDance.main(args);
                 break;
-            case 10:
-                //code to start game 10
-                break;
+
 
         }
     }
